@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_0"
+    tools:context=".MainActivity2">
+
+    <EditText
+        android:id="@+id/et_1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/bg_name"
+        android:drawableLeft="@drawable/pc_2"
+        android:drawablePadding="10dp"
+        android:hint="收入名稱"
+        android:maxLines="1"
+        android:paddingLeft="10dp"
+        android:textColor="#2F5597"
+        android:textColorHint="#3D6DC3"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/et_2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/et_1"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/bg_name"
+        android:drawableLeft="@drawable/earnings"
+        android:drawablePadding="10dp"
+        android:hint="收入金額"
+        android:inputType="number"
+        android:maxLines="1"
+        android:paddingLeft="10dp"
+        android:textColor="#2F5597"
+        android:textColorHint="#3D6DC3"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/et_3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/et_2"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/bg_name"
+        android:drawableLeft="@drawable/date"
+        android:drawablePadding="10dp"
+        android:hint="日期"
+        android:maxLines="1"
+        android:paddingLeft="10dp"
+        android:textColor="#2F5597"
+        android:textColorHint="#3D6DC3"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/et_4"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/et_3"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/bg_name"
+        android:drawableLeft="@drawable/time"
+        android:drawablePadding="10dp"
+        android:hint="時間"
+        android:maxLines="1"
+        android:paddingLeft="10dp"
+        android:textColor="#2F5597"
+        android:textColorHint="#3D6DC3"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/iv_1"
+        android:layout_width="match_parent"
+        android:layout_height="275dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_below="@id/et_4"/>
+
+    <ProgressBar
+        android:id="@+id/pb_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_1"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"/>
+
+    <Button
+        android:id="@+id/bt_2"
+        android:layout_width="55dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/bt_3"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/pc_3" />
+
+    <Button
+        android:id="@+id/bt_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/btn_name"
+        android:text="確定"
+        android:textColor="#FFFF"
+        android:textSize="25sp" />
+
+</RelativeLayout>
